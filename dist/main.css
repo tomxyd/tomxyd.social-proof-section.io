@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  background-image: url("images/bg-pattern-bott0m-desktop.svg");
+  font-family: Spartan, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.top .heading {
+  width: 40%;
+}
+
+.top h1 {
+  font-size: 2.5em;
+  color: #502050;
+  line-height: 1em;
+}
+
+.top p {
+  margin-top: 10px;
+  color: #937b92;
+  line-height: 1.5em;
+}
+
+.card-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 350px;
+  background-color: #f7f2f7;
+  padding: 10px;
+  border-radius: 10px;
+  color: #502050;
+}
+
+.rating-2 {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.rating-3 {
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.cards .header {
+  font-size: small;
+  line-height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards .header img {
+  border-radius: 50px;
+  width: 50px;
+}
+
+.cards .header .card-profile {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.cards .header .card-profile :nth-child(1) {
+  color: white;
+}
+
+.cards .header .card-profile :nth-child(2) {
+  color: #ee68a4;
+}
+
+.cards .description {
+  color: white;
+  margin-top: 20px;
+  font-size: small;
+}
+
+.cards > * {
+  background-color: #502050;
+  border-radius: 15px;
+  padding: 40px;
+  width: 31%;
+  height: 40%;
+}
+
+.card-2 {
+  margin-top: 20px;
+}
+
+.card-3 {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top .heading {
+    width: 100%;
+    text-align: center;
+  }
+  .ratings {
+    margin-top: 20px;
+  }
+  .rating-2 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .rating-3 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .card-rating {
+    width: 100%;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards > * {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

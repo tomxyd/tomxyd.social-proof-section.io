@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: inherit;
+  background-image: url("images/bg-pattern-bott0m-desktop.svg");
+  font-family: Spartan, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
